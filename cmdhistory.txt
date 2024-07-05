@@ -1,0 +1,59 @@
+    1  ssh node1
+    2  ls
+    3  ls /
+    4  ls /vagrant/
+    5  cat /vagrant/hosts 
+    6  ping 192.168.56.3
+    7  sudo cp /vagrant/hosts /etc/host
+    8  cat /etc/host
+    9  ssh 192.168.56.3
+   10  sudo rm /etc/host
+   11  sudo cp /vagrant/hosts /etc/hosts
+   12  cat /etc/hosts
+   13  ping node1
+   14  ssh node1
+   15  ssh node2
+   16  ssh node3
+   17  ssh-keygen 
+   18  ssh-copy-id node1 && ssh-copy-id node2 && ssh-copy-id node3
+   19  ssh node1
+   20  ssh node2
+   21  ssh node3
+   22  cls
+   23  clear
+   24  sudo cp /usr/bin/clear /usr/bin/cls
+   25  cls
+   26  sudo apt install ansible
+   27  ls
+   28  ll
+   29  ls /vagrant/
+   30  ls /vagrant/ansible/
+   31  ansible all -i /vagrant/ansible/myhosts -m ping
+   32  ssh-copy-id control
+   33  ansible all -i /vagrant/ansible/myhosts -m ping
+   34  ansible all -i /vagrant/ansible/myhosts -m command -a "hostname"
+   35  ansible all -i /vagrant/ansible/myhosts -m command -a "sudo apt update"
+   36  ls /vagrant/
+   37  ls /vagrant/solution/
+   38  ls /vagrant/solution/2.Ansible/
+   39  cat /vagrant/solution/2.Ansible/README.md 
+   40  ansible all -i /vagrant/ansible/myhosts -m command -a "sudo apt -y install python-simplejson"
+   41  cat /vagrant/solution/2.Ansible/README.md 
+   42  cat /vagrant/solution/2.Ansible/playbook1.yml 
+   43  ansible all -i /vagrant/ansible/myhosts -m command -a "sudo apt -y install docker.io docker-compose"
+   44  ansible all -i /vagrant/ansible/myhosts -m command -a "docker --version"
+   45  ansible all -i /vagrant/ansible/myhosts -m command -a "python3 --version"
+   46  cls
+   47  ansible all -i /vagrant/ansible/myhosts -m command -a "ip a | grep -e "192.168"
+   48  "
+   49  ansible all -i /vagrant/ansible/myhosts -m command -a 'ip a | grep -e "192.168"'
+   50  grep
+   51  ip a | grep -e "192.168"
+   52  ansible all -i /vagrant/ansible/myhosts -m command -a 'ip a \| grep -e "192.168"'
+   53  ansible all -i /vagrant/ansible/myhosts -m command -a 'ip a'
+   54  vagrant halt
+   55  exit
+   56  history
+   57  ls
+   58  ll
+   59  history > cmdhistory.txt
